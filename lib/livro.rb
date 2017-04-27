@@ -7,9 +7,13 @@ class Livro
     @preco = preco
   end
 
-  attr_writer :preco_antigo
-  attr_reader :preco_antigo
-  attr_accessor :preco_padrao
+  # attr_reader
+  # attr_writer
+   attr_accessor :autor
+   attr_accessor :isbn
+   attr_accessor :numero_de_paginas
+   
+
 
   def  initialize(autor, isbn = 1, numero_de_paginas, preco)
     @autor = autor
@@ -18,8 +22,11 @@ class Livro
     @preco = preco
   end
 
+
   def to_s
       "Autor: #{@autor}, Isbn: #{@isbn},
            Páginas: #{@numero_de_paginas}"
   end
+
+
 end

@@ -1,2 +1,5 @@
-require File.expand_path('lib/livro')
-require File.expand_path('lib/biblioteca')
+classes = ["livro", "biblioteca"]
+
+classes.each do |classe|
+  require File.expand_path("lib/#{classe}")
+end
